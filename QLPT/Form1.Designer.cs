@@ -40,6 +40,12 @@
             this.SidePanel = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.phongTroControl11 = new QLPT.PhongTroControl1();
             this.khachHangControl11 = new QLPT.KhachHangControl1();
             this.hopDongControl11 = new QLPT.HopDongControl1();
@@ -47,22 +53,13 @@
             this.hoaDonDienControl11 = new QLPT.HoaDonDienControl1();
             this.hoaDonControl11 = new QLPT.HoaDonControl1();
             this.dichVuControl11 = new QLPT.DichVuControl1();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -74,7 +71,6 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.bunifuFlatButton7);
             this.splitContainer1.Panel1.Controls.Add(this.bunifuFlatButton6);
             this.splitContainer1.Panel1.Controls.Add(this.bunifuFlatButton5);
@@ -370,73 +366,9 @@
             this.panel3.Size = new System.Drawing.Size(827, 590);
             this.panel3.TabIndex = 1;
             // 
-            // phongTroControl11
-            // 
-            this.phongTroControl11.BackColor = System.Drawing.Color.White;
-            this.phongTroControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.phongTroControl11.Location = new System.Drawing.Point(0, 0);
-            this.phongTroControl11.Name = "phongTroControl11";
-            this.phongTroControl11.Size = new System.Drawing.Size(827, 590);
-            this.phongTroControl11.TabIndex = 6;
-            // 
-            // khachHangControl11
-            // 
-            this.khachHangControl11.BackColor = System.Drawing.Color.White;
-            this.khachHangControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.khachHangControl11.Location = new System.Drawing.Point(0, 0);
-            this.khachHangControl11.Name = "khachHangControl11";
-            this.khachHangControl11.Size = new System.Drawing.Size(827, 590);
-            this.khachHangControl11.TabIndex = 5;
-            // 
-            // hopDongControl11
-            // 
-            this.hopDongControl11.BackColor = System.Drawing.Color.White;
-            this.hopDongControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hopDongControl11.Location = new System.Drawing.Point(0, 0);
-            this.hopDongControl11.Name = "hopDongControl11";
-            this.hopDongControl11.Size = new System.Drawing.Size(827, 590);
-            this.hopDongControl11.TabIndex = 4;
-            // 
-            // hoaDonNuocControl11
-            // 
-            this.hoaDonNuocControl11.BackColor = System.Drawing.Color.White;
-            this.hoaDonNuocControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hoaDonNuocControl11.Location = new System.Drawing.Point(0, 0);
-            this.hoaDonNuocControl11.Name = "hoaDonNuocControl11";
-            this.hoaDonNuocControl11.Size = new System.Drawing.Size(827, 590);
-            this.hoaDonNuocControl11.TabIndex = 3;
-            // 
-            // hoaDonDienControl11
-            // 
-            this.hoaDonDienControl11.BackColor = System.Drawing.Color.White;
-            this.hoaDonDienControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hoaDonDienControl11.Location = new System.Drawing.Point(0, 0);
-            this.hoaDonDienControl11.Name = "hoaDonDienControl11";
-            this.hoaDonDienControl11.Size = new System.Drawing.Size(827, 590);
-            this.hoaDonDienControl11.TabIndex = 2;
-            // 
-            // hoaDonControl11
-            // 
-            this.hoaDonControl11.BackColor = System.Drawing.Color.White;
-            this.hoaDonControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hoaDonControl11.Location = new System.Drawing.Point(0, 0);
-            this.hoaDonControl11.Name = "hoaDonControl11";
-            this.hoaDonControl11.Size = new System.Drawing.Size(827, 590);
-            this.hoaDonControl11.TabIndex = 1;
-            // 
-            // dichVuControl11
-            // 
-            this.dichVuControl11.BackColor = System.Drawing.Color.White;
-            this.dichVuControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dichVuControl11.Location = new System.Drawing.Point(0, 0);
-            this.dichVuControl11.Name = "dichVuControl11";
-            this.dichVuControl11.Size = new System.Drawing.Size(827, 590);
-            this.dichVuControl11.TabIndex = 0;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuImageButton1);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.gunaControlBox3);
             this.panel1.Controls.Add(this.gunaControlBox2);
             this.panel1.Controls.Add(this.gunaControlBox1);
@@ -445,28 +377,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(827, 59);
             this.panel1.TabIndex = 0;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(390, 15);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(58, 27);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 6;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(130, 15);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(266, 29);
-            this.textBox5.TabIndex = 5;
             // 
             // gunaControlBox3
             // 
@@ -533,17 +443,79 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // button1
+            // phongTroControl11
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(24, 543);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 35);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Thống kê";
-            this.button1.UseVisualStyleBackColor = true;
+            this.phongTroControl11.BackColor = System.Drawing.Color.White;
+            this.phongTroControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.phongTroControl11.Location = new System.Drawing.Point(0, 0);
+            this.phongTroControl11.Name = "phongTroControl11";
+            this.phongTroControl11.Size = new System.Drawing.Size(827, 590);
+            this.phongTroControl11.TabIndex = 6;
+            // 
+            // khachHangControl11
+            // 
+            this.khachHangControl11.BackColor = System.Drawing.Color.White;
+            this.khachHangControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.khachHangControl11.Location = new System.Drawing.Point(0, 0);
+            this.khachHangControl11.Name = "khachHangControl11";
+            this.khachHangControl11.Size = new System.Drawing.Size(827, 590);
+            this.khachHangControl11.TabIndex = 5;
+            // 
+            // hopDongControl11
+            // 
+            this.hopDongControl11.BackColor = System.Drawing.Color.White;
+            this.hopDongControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hopDongControl11.Location = new System.Drawing.Point(0, 0);
+            this.hopDongControl11.Name = "hopDongControl11";
+            this.hopDongControl11.Size = new System.Drawing.Size(827, 590);
+            this.hopDongControl11.TabIndex = 4;
+            // 
+            // hoaDonNuocControl11
+            // 
+            this.hoaDonNuocControl11.BackColor = System.Drawing.Color.White;
+            this.hoaDonNuocControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hoaDonNuocControl11.Location = new System.Drawing.Point(0, 0);
+            this.hoaDonNuocControl11.Name = "hoaDonNuocControl11";
+            this.hoaDonNuocControl11.Size = new System.Drawing.Size(827, 590);
+            this.hoaDonNuocControl11.TabIndex = 3;
+            // 
+            // hoaDonDienControl11
+            // 
+            this.hoaDonDienControl11.BackColor = System.Drawing.Color.White;
+            this.hoaDonDienControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hoaDonDienControl11.Location = new System.Drawing.Point(0, 0);
+            this.hoaDonDienControl11.Name = "hoaDonDienControl11";
+            this.hoaDonDienControl11.Size = new System.Drawing.Size(827, 590);
+            this.hoaDonDienControl11.TabIndex = 2;
+            // 
+            // hoaDonControl11
+            // 
+            this.hoaDonControl11.BackColor = System.Drawing.Color.White;
+            this.hoaDonControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hoaDonControl11.Location = new System.Drawing.Point(0, 0);
+            this.hoaDonControl11.Name = "hoaDonControl11";
+            this.hoaDonControl11.Size = new System.Drawing.Size(827, 590);
+            this.hoaDonControl11.TabIndex = 1;
+            // 
+            // dichVuControl11
+            // 
+            this.dichVuControl11.BackColor = System.Drawing.Color.White;
+            this.dichVuControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dichVuControl11.Location = new System.Drawing.Point(0, 0);
+            this.dichVuControl11.Name = "dichVuControl11";
+            this.dichVuControl11.Size = new System.Drawing.Size(827, 590);
+            this.dichVuControl11.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(210, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 37);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "QUẢN LÝ NHÀ TRỌ";
             // 
             // Form1
             // 
@@ -562,7 +534,6 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -585,8 +556,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.TextBox textBox5;
         private DichVuControl1 dichVuControl11;
         private PhongTroControl1 phongTroControl11;
         private KhachHangControl1 khachHangControl11;
@@ -594,7 +563,7 @@
         private HoaDonNuocControl1 hoaDonNuocControl11;
         private HoaDonDienControl1 hoaDonDienControl11;
         private HoaDonControl1 hoaDonControl11;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

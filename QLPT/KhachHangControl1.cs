@@ -15,6 +15,17 @@ namespace QLPT
         public KhachHangControl1()
         {
             InitializeComponent();
+            dgvDanhSachKH_Load();
+        }
+        private void dgvDanhSachKH_Load()
+        {
+            string sql = "select* from KhachHang";
+            DataTable dt = new DataTable();
+            dt = DataProvider.Instance.ExecuteQuery(sql);
+            dgvDanhSachKH.DataSource = dt;
+            btnLuu.Enabled = false;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
         }
     }
 }

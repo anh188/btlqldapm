@@ -146,7 +146,7 @@
   <data name="bunifuFlatButton6.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAh1JREFUaEPtmL9LW1EYhiNoHRyKdCpdFLJkCNVKXboIDlk6VQRB6GZBRHTr2KHQ
+        DAAACwwBP0AiyAAAAh1JREFUaEPtmL9LW1EYhiNoHRyKdCpdFLJkCNVKXboIDlk6VQRB6GZBRHTr2KHQ
         /6ZTx2KnDoL+CTpJpeAPRHBQauPznvMdvJVo0nBOkivngYfknpz73fclQeFUMpkINJvNF7iAiyXxHY6H
         8Gt4gWXjD26owLG7LCdHKhDYxPGSqKyOYoEP7jdVApTVR84F+oOy+siJCzBzWdplNJRVgUWyAsxr+LGO
         hi1HgXk9KTCFV+ZLW46CsqIjWQHBzEmcsMtoKKsCi6QFUqGsPnLan9AQfjGHbDkKyoqOlAXqfqyjbstR
@@ -235,24 +235,6 @@
         nU4UleeOxe2HLyZVUKHpLzw+qKBa+mbK6BUeP5qof1cuXzA2yuDKJpv2d3Bjh2LTsTj+6HJvRlTyArGp
         dIFzPC5RZ3yodIHSuteZ3tGhyQv4kBdwkBfwIS/gIC/gQ17AQV7Ah7yAg3+8QCaTSZ2i+AJmROFLaIGV
         TAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAtlJREFUaEPt2MvLTVEYx/GD3ENeymVAbgOGDE3EiBHKW6ZuUSSSQowkk1cxwADJ
-        TGHiVv6Ad4L3FVHuioFCLskl1+9P7do9Pftc9lrL2afOrz4D4Xn2OnuttdfetW66qU6GYwpmYxpGodIZ
-        g7U4i4f4gT85v/Ac57EBE1GJ6NftwyfkL7iRbziDeWhLhmA7Wr1w6zsOYST+W3T7r8O7oLJuYSaSZyru
-        wruIUK+wAMkyAXfgNc98xRXswBosxUpsgxbwR3j/L6NBJLkTmvOX4DUVrYX9GId60Vzfgtfw6oimU/Q1
-        sQ5eM+mHdqNWooHW+0G0sKNFU+ctvEYXUfbX0l3VFuzV1e40F1GyD16T29ADLCQahNaGV/80gjMUL2GL
-        60E0CzGi6eStCfUIfmIvgS0sRxAzWthen/UIykHYor8xAzGjdeRtsZpeQbkBW1RzP0W8taADYFBewBY9
-        ihTZCttLp9igo/hn2KK7kSKrYHvJdJTOT9iCG5EiRRvGHJSOd1zeixTphe0lPSidx7AFjyNFdsL20gwY
-        htLRydIW1StjilyF7XUPQSk6RsQ+t+tprKO47XMKQVkEW1TOIWYOwOuzGsF5AFtY+7MGFyPaJr3N4h2i
-        vBdshi0uzzAZIdEF6n3Cq38YUaImT+E1UfOygxiNC/DqvkfQ9mmzAjrEec10J1qdTvpidxNePdFONwlR
-        cwxeM9Ga0MJutDvpFKujuN64vDp5g4g6CH3vbOZ70COcgLbgTdDZSYMfgPfv64k+iLGI/VGrkSR3Qkfq
-        ojWRQvRBKMvxBF7DZul9W1+19U3J+/u8JIMYAc3z+/CaFtEuswuaklnaNogsC7EHl6FT7AeoqZ6oumAd
-        1rSwF0OfU7y0fRAxol3Lu/A8faMNPQUkTbN3Yjwqm2YGkerlKloaTac3qHzqDaIjBqAUTaeT6Jjow9cX
-        ZBd/Dfr031HRO8IyzP/3p266iZla7S+eQjsQQbyceAAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
