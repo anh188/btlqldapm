@@ -99,7 +99,7 @@ namespace QLPT
             if (txtGiaDV.Text == "")
             {
                 txtGiaDV.Focus();
-                MessageBox.Show("Bạn chưa nhập giá dịch vụ để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa nhập giá Dịch vụ để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             string maDV = txtMaDV.Text;
