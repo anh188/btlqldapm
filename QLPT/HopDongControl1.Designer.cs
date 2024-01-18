@@ -29,97 +29,165 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HopDongControl1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.HopDong = new System.Windows.Forms.Panel();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.cbbMaKH = new System.Windows.Forms.ComboBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTK = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtGiaPhong = new System.Windows.Forms.TextBox();
+            this.txtTenKH = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayThue = new System.Windows.Forms.DateTimePicker();
+            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTienCoc = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaHD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.MaHopDong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.MaKH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.MaPhong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.GiaPhong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.TienCoc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.NgayThue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.NgayTra = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.TenKH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.dtgSDTHopDong = new System.Windows.Forms.DataGridView();
+            this.MaHopDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TienCoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbHopDong = new System.Windows.Forms.GroupBox();
+            this.HopDong.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSDTHopDong)).BeginInit();
+            this.gbHopDong.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // HopDong
             // 
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.HopDong.Controls.Add(this.btnSua);
+            this.HopDong.Controls.Add(this.btnHuy);
+            this.HopDong.Controls.Add(this.cbbMaKH);
+            this.HopDong.Controls.Add(this.btnTimKiem);
+            this.HopDong.Controls.Add(this.txtTK);
+            this.HopDong.Controls.Add(this.label10);
+            this.HopDong.Controls.Add(this.txtGiaPhong);
+            this.HopDong.Controls.Add(this.txtTenKH);
+            this.HopDong.Controls.Add(this.label6);
+            this.HopDong.Controls.Add(this.dtpNgayTra);
+            this.HopDong.Controls.Add(this.dtpNgayThue);
+            this.HopDong.Controls.Add(this.cbbMaPhong);
+            this.HopDong.Controls.Add(this.label9);
+            this.HopDong.Controls.Add(this.label8);
+            this.HopDong.Controls.Add(this.txtTenPhong);
+            this.HopDong.Controls.Add(this.panel3);
+            this.HopDong.Controls.Add(this.btnXoa);
+            this.HopDong.Controls.Add(this.btnLuu);
+            this.HopDong.Controls.Add(this.btnThem);
+            this.HopDong.Controls.Add(this.label7);
+            this.HopDong.Controls.Add(this.txtTienCoc);
+            this.HopDong.Controls.Add(this.label5);
+            this.HopDong.Controls.Add(this.label4);
+            this.HopDong.Controls.Add(this.label3);
+            this.HopDong.Controls.Add(this.txtMaHD);
+            this.HopDong.Controls.Add(this.label2);
+            resources.ApplyResources(this.HopDong, "HopDong");
+            this.HopDong.Name = "HopDong";
             // 
-            // button4
+            // btnSua
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnSua, "btnSua");
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Name = "btnSua";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // dateTimePicker2
+            // btnHuy
             // 
-            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHuy.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnHuy, "btnHuy");
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // dateTimePicker1
+            // cbbMaKH
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Name = "dateTimePicker1";
+            resources.ApplyResources(this.cbbMaKH, "cbbMaKH");
+            this.cbbMaKH.FormattingEnabled = true;
+            this.cbbMaKH.Name = "cbbMaKH";
+            this.cbbMaKH.SelectedIndexChanged += new System.EventHandler(this.cbbMaKH_SelectedIndexChanged);
+            this.cbbMaKH.SelectedValueChanged += new System.EventHandler(this.cbbMaKH_SelectedValueChanged);
             // 
-            // comboBox2
+            // btnTimKiem
             // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Name = "comboBox2";
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
+            resources.ApplyResources(this.btnTimKiem, "btnTimKiem");
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTK
+            // 
+            resources.ApplyResources(this.txtTK, "txtTK");
+            this.txtTK.Name = "txtTK";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // txtGiaPhong
+            // 
+            resources.ApplyResources(this.txtGiaPhong, "txtGiaPhong");
+            this.txtGiaPhong.Name = "txtGiaPhong";
+            // 
+            // txtTenKH
+            // 
+            resources.ApplyResources(this.txtTenKH, "txtTenKH");
+            this.txtTenKH.Name = "txtTenKH";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // dtpNgayTra
+            // 
+            resources.ApplyResources(this.dtpNgayTra, "dtpNgayTra");
+            this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayTra.Name = "dtpNgayTra";
+            // 
+            // dtpNgayThue
+            // 
+            resources.ApplyResources(this.dtpNgayThue, "dtpNgayThue");
+            this.dtpNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayThue.Name = "dtpNgayThue";
+            // 
+            // cbbMaPhong
+            // 
+            resources.ApplyResources(this.cbbMaPhong, "cbbMaPhong");
+            this.cbbMaPhong.FormattingEnabled = true;
+            this.cbbMaPhong.Name = "cbbMaPhong";
+            this.cbbMaPhong.SelectedIndexChanged += new System.EventHandler(this.cbbMaPhong_SelectedIndexChanged);
+            this.cbbMaPhong.SelectedValueChanged += new System.EventHandler(this.cbbMaPhong_SelectedValueChanged);
             // 
             // label9
             // 
@@ -131,15 +199,10 @@
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
-            // textBox6
+            // txtTenPhong
             // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            resources.ApplyResources(this.txtTenPhong, "txtTenPhong");
+            this.txtTenPhong.Name = "txtTenPhong";
             // 
             // panel3
             // 
@@ -154,45 +217,49 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnXoa, "btnXoa");
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button2
+            // btnLuu
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnLuu, "btnLuu");
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnThem, "btnThem");
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Name = "btnThem";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // textBox4
+            // txtTienCoc
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
+            resources.ApplyResources(this.txtTienCoc, "txtTienCoc");
+            this.txtTienCoc.Name = "txtTienCoc";
+            this.txtTienCoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTienCoc_KeyPress);
             // 
             // label5
             // 
@@ -209,136 +276,155 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // textBox1
+            // txtMaHD
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtMaHD, "txtMaHD");
+            this.txtMaHD.Name = "txtMaHD";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // groupBox1
+            // dtgSDTHopDong
             // 
-            this.groupBox1.Controls.Add(this.listView1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.dtgSDTHopDong.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtgSDTHopDong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgSDTHopDong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHopDong,
             this.MaKH,
             this.TenKH,
             this.MaPhong,
+            this.TenPhong,
             this.GiaPhong,
             this.TienCoc,
             this.NgayThue,
             this.NgayTra});
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            resources.ApplyResources(this.dtgSDTHopDong, "dtgSDTHopDong");
+            this.dtgSDTHopDong.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtgSDTHopDong.Name = "dtgSDTHopDong";
+            this.dtgSDTHopDong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSDTHopDong_CellContentClick);
             // 
             // MaHopDong
             // 
+            this.MaHopDong.DataPropertyName = "MaHopDong";
             resources.ApplyResources(this.MaHopDong, "MaHopDong");
+            this.MaHopDong.Name = "MaHopDong";
             // 
             // MaKH
             // 
+            this.MaKH.DataPropertyName = "MaKH";
             resources.ApplyResources(this.MaKH, "MaKH");
-            // 
-            // MaPhong
-            // 
-            resources.ApplyResources(this.MaPhong, "MaPhong");
-            // 
-            // GiaPhong
-            // 
-            resources.ApplyResources(this.GiaPhong, "GiaPhong");
-            // 
-            // TienCoc
-            // 
-            resources.ApplyResources(this.TienCoc, "TienCoc");
-            // 
-            // NgayThue
-            // 
-            resources.ApplyResources(this.NgayThue, "NgayThue");
-            // 
-            // NgayTra
-            // 
-            resources.ApplyResources(this.NgayTra, "NgayTra");
+            this.MaKH.Name = "MaKH";
             // 
             // TenKH
             // 
+            this.TenKH.DataPropertyName = "TenKH";
             resources.ApplyResources(this.TenKH, "TenKH");
+            this.TenKH.Name = "TenKH";
             // 
-            // textBox2
+            // MaPhong
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            this.MaPhong.DataPropertyName = "MaPhong";
+            resources.ApplyResources(this.MaPhong, "MaPhong");
+            this.MaPhong.Name = "MaPhong";
             // 
-            // label6
+            // TenPhong
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            this.TenPhong.DataPropertyName = "TenPhong";
+            resources.ApplyResources(this.TenPhong, "TenPhong");
+            this.TenPhong.Name = "TenPhong";
+            // 
+            // GiaPhong
+            // 
+            this.GiaPhong.DataPropertyName = "GiaPhong";
+            resources.ApplyResources(this.GiaPhong, "GiaPhong");
+            this.GiaPhong.Name = "GiaPhong";
+            // 
+            // TienCoc
+            // 
+            this.TienCoc.DataPropertyName = "TienCoc";
+            resources.ApplyResources(this.TienCoc, "TienCoc");
+            this.TienCoc.Name = "TienCoc";
+            // 
+            // NgayThue
+            // 
+            this.NgayThue.DataPropertyName = "NgayThue";
+            resources.ApplyResources(this.NgayThue, "NgayThue");
+            this.NgayThue.Name = "NgayThue";
+            // 
+            // NgayTra
+            // 
+            this.NgayTra.DataPropertyName = "NgayTra";
+            resources.ApplyResources(this.NgayTra, "NgayTra");
+            this.NgayTra.Name = "NgayTra";
+            // 
+            // gbHopDong
+            // 
+            this.gbHopDong.Controls.Add(this.dtgSDTHopDong);
+            resources.ApplyResources(this.gbHopDong, "gbHopDong");
+            this.gbHopDong.Name = "gbHopDong";
+            this.gbHopDong.TabStop = false;
             // 
             // HopDongControl1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.gbHopDong);
+            this.Controls.Add(this.HopDong);
             this.Name = "HopDongControl1";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.HopDongControl1_Load_1);
+            this.HopDong.ResumeLayout(false);
+            this.HopDong.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSDTHopDong)).EndInit();
+            this.gbHopDong.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Panel HopDong;
+        private System.Windows.Forms.ComboBox cbbMaPhong;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTenPhong;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTienCoc;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaHD;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader MaHopDong;
-        private System.Windows.Forms.ColumnHeader MaKH;
-        private System.Windows.Forms.ColumnHeader MaPhong;
-        private System.Windows.Forms.ColumnHeader GiaPhong;
-        private System.Windows.Forms.ColumnHeader TienCoc;
-        private System.Windows.Forms.ColumnHeader NgayThue;
-        private System.Windows.Forms.ColumnHeader NgayTra;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DateTimePicker dtpNgayThue;
+        private System.Windows.Forms.DateTimePicker dtpNgayTra;
+        private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ColumnHeader TenKH;
+        private System.Windows.Forms.TextBox txtGiaPhong;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTK;
+        private System.Windows.Forms.ComboBox cbbMaKH;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.DataGridView dtgSDTHopDong;
+        private System.Windows.Forms.GroupBox gbHopDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHopDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TienCoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayThue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayTra;
     }
 }
