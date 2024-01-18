@@ -40,12 +40,6 @@
             this.SidePanel = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.phongTroControl11 = new QLPT.PhongTroControl1();
             this.khachHangControl11 = new QLPT.KhachHangControl1();
             this.hopDongControl11 = new QLPT.HopDongControl1();
@@ -53,7 +47,13 @@
             this.hoaDonDienControl11 = new QLPT.HoaDonDienControl1();
             this.hoaDonControl11 = new QLPT.HoaDonControl1();
             this.dichVuControl11 = new QLPT.DichVuControl1();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -366,6 +366,70 @@
             this.panel3.Size = new System.Drawing.Size(827, 590);
             this.panel3.TabIndex = 1;
             // 
+            // phongTroControl11
+            // 
+            this.phongTroControl11.BackColor = System.Drawing.Color.White;
+            this.phongTroControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.phongTroControl11.Location = new System.Drawing.Point(0, 0);
+            this.phongTroControl11.Name = "phongTroControl11";
+            this.phongTroControl11.Size = new System.Drawing.Size(827, 590);
+            this.phongTroControl11.TabIndex = 6;
+            this.phongTroControl11.Load += new System.EventHandler(this.phongTroControl11_Load);
+            // 
+            // khachHangControl11
+            // 
+            this.khachHangControl11.BackColor = System.Drawing.Color.White;
+            this.khachHangControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.khachHangControl11.Location = new System.Drawing.Point(0, 0);
+            this.khachHangControl11.Name = "khachHangControl11";
+            this.khachHangControl11.Size = new System.Drawing.Size(827, 590);
+            this.khachHangControl11.TabIndex = 5;
+            // 
+            // hopDongControl11
+            // 
+            this.hopDongControl11.BackColor = System.Drawing.Color.White;
+            this.hopDongControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hopDongControl11.Location = new System.Drawing.Point(0, 0);
+            this.hopDongControl11.Name = "hopDongControl11";
+            this.hopDongControl11.Size = new System.Drawing.Size(827, 590);
+            this.hopDongControl11.TabIndex = 4;
+            // 
+            // hoaDonNuocControl11
+            // 
+            this.hoaDonNuocControl11.BackColor = System.Drawing.Color.White;
+            this.hoaDonNuocControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hoaDonNuocControl11.Location = new System.Drawing.Point(0, 0);
+            this.hoaDonNuocControl11.Name = "hoaDonNuocControl11";
+            this.hoaDonNuocControl11.Size = new System.Drawing.Size(827, 590);
+            this.hoaDonNuocControl11.TabIndex = 3;
+            // 
+            // hoaDonDienControl11
+            // 
+            this.hoaDonDienControl11.BackColor = System.Drawing.Color.White;
+            this.hoaDonDienControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hoaDonDienControl11.Location = new System.Drawing.Point(0, 0);
+            this.hoaDonDienControl11.Name = "hoaDonDienControl11";
+            this.hoaDonDienControl11.Size = new System.Drawing.Size(827, 590);
+            this.hoaDonDienControl11.TabIndex = 2;
+            // 
+            // hoaDonControl11
+            // 
+            this.hoaDonControl11.BackColor = System.Drawing.Color.White;
+            this.hoaDonControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hoaDonControl11.Location = new System.Drawing.Point(0, 0);
+            this.hoaDonControl11.Name = "hoaDonControl11";
+            this.hoaDonControl11.Size = new System.Drawing.Size(827, 590);
+            this.hoaDonControl11.TabIndex = 1;
+            // 
+            // dichVuControl11
+            // 
+            this.dichVuControl11.BackColor = System.Drawing.Color.White;
+            this.dichVuControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dichVuControl11.Location = new System.Drawing.Point(0, 0);
+            this.dichVuControl11.Name = "dichVuControl11";
+            this.dichVuControl11.Size = new System.Drawing.Size(827, 590);
+            this.dichVuControl11.TabIndex = 0;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
@@ -377,6 +441,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(827, 59);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(210, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 37);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "QUẢN LÝ NHÀ TRỌ";
             // 
             // gunaControlBox3
             // 
@@ -442,80 +517,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // phongTroControl11
-            // 
-            this.phongTroControl11.BackColor = System.Drawing.Color.White;
-            this.phongTroControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.phongTroControl11.Location = new System.Drawing.Point(0, 0);
-            this.phongTroControl11.Name = "phongTroControl11";
-            this.phongTroControl11.Size = new System.Drawing.Size(827, 590);
-            this.phongTroControl11.TabIndex = 6;
-            // 
-            // khachHangControl11
-            // 
-            this.khachHangControl11.BackColor = System.Drawing.Color.White;
-            this.khachHangControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.khachHangControl11.Location = new System.Drawing.Point(0, 0);
-            this.khachHangControl11.Name = "khachHangControl11";
-            this.khachHangControl11.Size = new System.Drawing.Size(827, 590);
-            this.khachHangControl11.TabIndex = 5;
-            // 
-            // hopDongControl11
-            // 
-            this.hopDongControl11.BackColor = System.Drawing.Color.White;
-            this.hopDongControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hopDongControl11.Location = new System.Drawing.Point(0, 0);
-            this.hopDongControl11.Name = "hopDongControl11";
-            this.hopDongControl11.Size = new System.Drawing.Size(827, 590);
-            this.hopDongControl11.TabIndex = 4;
-            // 
-            // hoaDonNuocControl11
-            // 
-            this.hoaDonNuocControl11.BackColor = System.Drawing.Color.White;
-            this.hoaDonNuocControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hoaDonNuocControl11.Location = new System.Drawing.Point(0, 0);
-            this.hoaDonNuocControl11.Name = "hoaDonNuocControl11";
-            this.hoaDonNuocControl11.Size = new System.Drawing.Size(827, 590);
-            this.hoaDonNuocControl11.TabIndex = 3;
-            // 
-            // hoaDonDienControl11
-            // 
-            this.hoaDonDienControl11.BackColor = System.Drawing.Color.White;
-            this.hoaDonDienControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hoaDonDienControl11.Location = new System.Drawing.Point(0, 0);
-            this.hoaDonDienControl11.Name = "hoaDonDienControl11";
-            this.hoaDonDienControl11.Size = new System.Drawing.Size(827, 590);
-            this.hoaDonDienControl11.TabIndex = 2;
-            // 
-            // hoaDonControl11
-            // 
-            this.hoaDonControl11.BackColor = System.Drawing.Color.White;
-            this.hoaDonControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hoaDonControl11.Location = new System.Drawing.Point(0, 0);
-            this.hoaDonControl11.Name = "hoaDonControl11";
-            this.hoaDonControl11.Size = new System.Drawing.Size(827, 590);
-            this.hoaDonControl11.TabIndex = 1;
-            // 
-            // dichVuControl11
-            // 
-            this.dichVuControl11.BackColor = System.Drawing.Color.White;
-            this.dichVuControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dichVuControl11.Location = new System.Drawing.Point(0, 0);
-            this.dichVuControl11.Name = "dichVuControl11";
-            this.dichVuControl11.Size = new System.Drawing.Size(827, 590);
-            this.dichVuControl11.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(210, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(314, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "QUẢN LÝ NHÀ TRỌ";
             // 
             // Form1
             // 

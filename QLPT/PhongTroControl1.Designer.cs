@@ -32,7 +32,6 @@
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@
             this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -97,15 +97,6 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "Giá phòng:";
             // 
-            // cbbTrangThai
-            // 
-            this.cbbTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbTrangThai.FormattingEnabled = true;
-            this.cbbTrangThai.Location = new System.Drawing.Point(229, 184);
-            this.cbbTrangThai.Name = "cbbTrangThai";
-            this.cbbTrangThai.Size = new System.Drawing.Size(171, 28);
-            this.cbbTrangThai.TabIndex = 35;
-            // 
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(65)))), ((int)(((byte)(110)))));
@@ -134,6 +125,7 @@
             this.btnSua.TabIndex = 40;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -148,6 +140,7 @@
             this.btnXoa.TabIndex = 41;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // panel3
             // 
@@ -191,9 +184,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(121, 187);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 20);
+            this.label8.Size = new System.Drawing.Size(84, 20);
             this.label8.TabIndex = 45;
-            this.label8.Text = "Trạng thái";
+            this.label8.Text = "Trạng thái:";
             // 
             // panel1
             // 
@@ -246,6 +239,7 @@
             this.btnHuy.TabIndex = 48;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // txtTimKiem
             // 
@@ -303,6 +297,7 @@
             this.dgvDanhSachPhong.Name = "dgvDanhSachPhong";
             this.dgvDanhSachPhong.Size = new System.Drawing.Size(799, 299);
             this.dgvDanhSachPhong.TabIndex = 0;
+            this.dgvDanhSachPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachPhong_CellClick);
             // 
             // MaPhong
             // 
@@ -332,6 +327,15 @@
             this.TrangThai.Name = "TrangThai";
             this.TrangThai.Width = 150;
             // 
+            // cbbTrangThai
+            // 
+            this.cbbTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbTrangThai.FormattingEnabled = true;
+            this.cbbTrangThai.Location = new System.Drawing.Point(229, 184);
+            this.cbbTrangThai.Name = "cbbTrangThai";
+            this.cbbTrangThai.Size = new System.Drawing.Size(171, 28);
+            this.cbbTrangThai.TabIndex = 35;
+            // 
             // PhongTroControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,7 +362,6 @@
         private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbbTrangThai;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
@@ -379,5 +382,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaPhong;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.ComboBox cbbTrangThai;
     }
 }

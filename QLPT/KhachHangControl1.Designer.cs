@@ -34,8 +34,8 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtTenPhon = new System.Windows.Forms.TextBox();
-            this.txtGioiTinh = new System.Windows.Forms.ComboBox();
+            this.txtTenPhong = new System.Windows.Forms.TextBox();
+            this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtSoDienThoai = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtMaPhong = new System.Windows.Forms.ComboBox();
+            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
             this.txtCanCuoc = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -77,8 +77,8 @@
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtTenPhon);
-            this.panel1.Controls.Add(this.txtGioiTinh);
+            this.panel1.Controls.Add(this.txtTenPhong);
+            this.panel1.Controls.Add(this.cbbGioiTinh);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtSoDienThoai);
@@ -88,7 +88,7 @@
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtMaPhong);
+            this.panel1.Controls.Add(this.cbbMaPhong);
             this.panel1.Controls.Add(this.txtCanCuoc);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtDiaChi);
@@ -115,6 +115,7 @@
             this.btnTimKiem.TabIndex = 54;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -123,6 +124,7 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(174, 26);
             this.txtTimKiem.TabIndex = 53;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // btnLuu
             // 
@@ -151,6 +153,7 @@
             this.btnHuy.TabIndex = 51;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // label6
             // 
@@ -162,22 +165,22 @@
             this.label6.TabIndex = 50;
             this.label6.Text = "Tên phòng:";
             // 
-            // txtTenPhon
+            // txtTenPhong
             // 
-            this.txtTenPhon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenPhon.Location = new System.Drawing.Point(494, 170);
-            this.txtTenPhon.Name = "txtTenPhon";
-            this.txtTenPhon.Size = new System.Drawing.Size(177, 26);
-            this.txtTenPhon.TabIndex = 49;
+            this.txtTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenPhong.Location = new System.Drawing.Point(494, 170);
+            this.txtTenPhong.Name = "txtTenPhong";
+            this.txtTenPhong.Size = new System.Drawing.Size(177, 26);
+            this.txtTenPhong.TabIndex = 49;
             // 
-            // txtGioiTinh
+            // cbbGioiTinh
             // 
-            this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.FormattingEnabled = true;
-            this.txtGioiTinh.Location = new System.Drawing.Point(153, 136);
-            this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(177, 28);
-            this.txtGioiTinh.TabIndex = 48;
+            this.cbbGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbGioiTinh.FormattingEnabled = true;
+            this.cbbGioiTinh.Location = new System.Drawing.Point(153, 136);
+            this.cbbGioiTinh.Name = "cbbGioiTinh";
+            this.cbbGioiTinh.Size = new System.Drawing.Size(177, 28);
+            this.cbbGioiTinh.TabIndex = 48;
             // 
             // label9
             // 
@@ -248,6 +251,7 @@
             this.btnXoa.TabIndex = 41;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -262,6 +266,7 @@
             this.btnSua.TabIndex = 40;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -276,6 +281,7 @@
             this.btnThem.TabIndex = 39;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label7
             // 
@@ -287,14 +293,14 @@
             this.label7.TabIndex = 38;
             this.label7.Text = "Căn cước:";
             // 
-            // txtMaPhong
+            // cbbMaPhong
             // 
-            this.txtMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPhong.FormattingEnabled = true;
-            this.txtMaPhong.Location = new System.Drawing.Point(494, 136);
-            this.txtMaPhong.Name = "txtMaPhong";
-            this.txtMaPhong.Size = new System.Drawing.Size(177, 28);
-            this.txtMaPhong.TabIndex = 35;
+            this.cbbMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbMaPhong.FormattingEnabled = true;
+            this.cbbMaPhong.Location = new System.Drawing.Point(494, 136);
+            this.cbbMaPhong.Name = "cbbMaPhong";
+            this.cbbMaPhong.Size = new System.Drawing.Size(177, 28);
+            this.cbbMaPhong.TabIndex = 35;
             // 
             // txtCanCuoc
             // 
@@ -389,6 +395,8 @@
             this.dgvDanhSachKH.Name = "dgvDanhSachKH";
             this.dgvDanhSachKH.Size = new System.Drawing.Size(799, 316);
             this.dgvDanhSachKH.TabIndex = 0;
+            this.dgvDanhSachKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellClick);
+            this.dgvDanhSachKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellContentClick);
             // 
             // MaKH
             // 
@@ -471,7 +479,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox txtMaPhong;
+        private System.Windows.Forms.ComboBox cbbMaPhong;
         private System.Windows.Forms.TextBox txtCanCuoc;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDiaChi;
@@ -484,11 +492,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtSoDienThoai;
         private System.Windows.Forms.TextBox txtTenKH;
-        private System.Windows.Forms.ComboBox txtGioiTinh;
+        private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTenPhon;
+        private System.Windows.Forms.TextBox txtTenPhong;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnLuu;
