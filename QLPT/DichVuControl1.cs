@@ -23,11 +23,18 @@ namespace QLPT
             DataTable dt = new DataTable();
             dt = DataProvider.Instance.ExecuteQuery(sql);
             dtgDichVu.DataSource = dt;
+            txtMaDV.Enabled = false;
+            txtGiaDV.Enabled = false;
+            txtTenDV.Enabled = false;
             btnLuu.Enabled = false;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+            btnThem.Enabled = true;
         }
-        private void btnThem_Click(object sender, EventArgs e)
+
+        Boolean chucnang = false;
+
+        private void Them()
         {
             if (txtMaDV.Text == "")
             {
@@ -56,11 +63,21 @@ namespace QLPT
                 Reset_data();
                 dtgDichVu_load();
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Mã Dịch Vụ bị trùng rồi !!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
 
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            txtMaDV.Enabled = true;
+            txtGiaDV.Enabled = true;
+            txtTenDV.Enabled = true;
+            chucnang = true;
+            btnSua.Enabled = false;
+            btnLuu.Enabled = true;
+            txtMaDV.Focus();
         }
 
         private void Reset_data()
@@ -125,6 +142,7 @@ namespace QLPT
             btnLuu.Enabled = true;
             btnXoa.Enabled = true;
             btnSua.Enabled = true;
+            btnThem.Enabled = false;
 
         }
 
@@ -137,46 +155,32 @@ namespace QLPT
             btnLuu.Enabled = true;
             btnXoa.Enabled = true;
             btnSua.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (txtMaDV.Text == "")
-                {
-                    txtMaDV.Focus();
-                    MessageBox.Show("Bạn chưa nhập Mã Dịch Vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtTenDV.Text == "")
-                {
-                    txtTenDV.Focus();
-                    MessageBox.Show("Bạn chưa nhập tên Dịch Vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtGiaDV.Text == "")
-                {
-                    txtGiaDV.Focus();
-                    MessageBox.Show("Bạn chưa nhập giá dịch vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                string sql = "update DichVu set TenDV ='" + txtTenDV.Text.ToString().Trim() + "', " +
-               "GiaDV='" + txtGiaDV.Text.ToString().Trim() + "'where MaDV ='" + txtMaDV.Text.ToString().Trim() + "'";
-                DataProvider.Instance.ExecuteNonQuery(sql);
-                Reset_data();
-                dtgDichVu_load();
-                MessageBox.Show("Đã sửa thành công!!");
-
-            }
-            catch 
-            {
-                MessageBox.Show("Chưa sửa được !!");
-            }
-
+            txtMaDV.Enabled = true;
+            txtGiaDV.Enabled = true;
+            txtTenDV.Enabled = true;
+            btnThem.Enabled = false;
+            chucnang = false;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
+        {
+           if (chucnang == true)
+            {
+                Them();
+            }
+           else
+            {
+                Luu();
+            }
+            Reset_data();
+        }
+
+        private void Luu()
         {
             try
             {
@@ -210,7 +214,6 @@ namespace QLPT
             {
                 MessageBox.Show("Chưa lưu được!! ");
             }
-
         }
 
         private void btnTK_Click(object sender, EventArgs e)
