@@ -18,6 +18,7 @@ namespace QLPT
         {
             InitializeComponent();
         }
+        Boolean chucnang = true;
       
         private void HopDongControl1_Load_1(object sender, EventArgs e)
         {
@@ -39,6 +40,20 @@ namespace QLPT
         }
 
         private void btnThem_Click(object sender, EventArgs e)
+        {
+            btnLuu.Enabled = true;
+            txtMaHD.Enabled = true;
+            cbbMaKH.Enabled = true;
+            txtTenKH.Enabled = true;
+            cbbMaPhong.Enabled = true;
+            txtTenPhong.Enabled = true;
+            txtTienCoc.Enabled = true;
+            dtpNgayThue.Enabled = true;
+            dtpNgayTra.Enabled = true;
+            chucnang = true;
+        }
+
+        private void Them()
         {
             try
             {
@@ -90,16 +105,15 @@ namespace QLPT
                "'" + txtTenPhong.Text.ToString().Trim() + "'," + "'" + txtTienCoc.Text.ToString().Trim() + "'," +
                "'" + dtpNgayThue.Value.ToString("yyyy-MM-dd") + "','" + dtpNgayTra.Value.ToString("yyyy-MM-dd") + "')";
                 DataProvider.Instance.ExecuteNonQuery(sql);
-                MessageBox.Show("da them thanh cong");
+                MessageBox.Show(" Đã Thêm thành công !");
                 Reset_Data();
                 dtgHopDong_load();
             }
-            catch 
+            catch
             {
-                MessageBox.Show("Kiểm tra lại Mã Khách Hàng với Mã Phòng lại xem" ,"Sai cú pháp rồi nhé !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Kiểm tra lại Mã Khách Hàng với Mã Phòng lại xem", "Sai cú pháp rồi nhé !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Reset_Data();
             }
-
         }
 
         private void Reset_Data()
@@ -111,6 +125,16 @@ namespace QLPT
             btnLuu.Enabled = false;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+            btnThem.Enabled = true;
+// dong bang het
+            txtMaHD.Enabled = false;
+            cbbMaKH.Enabled = false;
+            txtTenKH.Enabled = false;
+            cbbMaPhong.Enabled = false;
+            txtTenPhong.Enabled = false;
+            txtTienCoc.Enabled = false;
+            dtpNgayThue.Enabled = false;
+            dtpNgayTra.Enabled = false;
             dtgHopDong_load();
         }
     
@@ -173,6 +197,7 @@ namespace QLPT
             btnSua.Enabled = true;
             btnLuu.Enabled = true;
             btnXoa.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
@@ -229,82 +254,34 @@ namespace QLPT
 
         private void cbbMaKH_SelectedValueChanged(object sender, EventArgs e)
         {
-            txtMaHD.Text = txtGiaPhong.Text = txtTenPhong.Text = "";
+            txtGiaPhong.Text = txtTenPhong.Text = "";
             txtTienCoc.Text = txtTK.Text = cbbMaPhong.Text = "";
             dtpNgayThue.Value = dtpNgayTra.Value = DateTime.Now;
         }
 
         private void cbbMaPhong_SelectedValueChanged(object sender, EventArgs e)
         {
-            txtMaHD.Text = txtGiaPhong.Text = /*txtTenKH.Text = cbbMaKH.Text =*/ "";
+            txtGiaPhong.Text = /*txtTenKH.Text = cbbMaKH.Text =*/ "";
             txtTienCoc.Text = txtTK.Text = "";
             dtpNgayThue.Value = dtpNgayTra.Value = DateTime.Now;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (txtMaHD.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập Mã Hợp Đồng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMaHD.Focus();
-                    return;
-                }
-                if (cbbMaKH.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải chọn Mã Khách Hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMaHD.Focus();
-                    return;
-                }
-                if (txtTenKH.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập Tên Khách Hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMaHD.Focus();
-                    return;
-                }
-                if (cbbMaPhong.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải chọn Mã Phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMaHD.Focus();
-                    return;
-                }
-                if (txtTenPhong.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập Tên Phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMaHD.Focus();
-                    return;
-                }
-                if (txtTienCoc.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập Tiền Cọc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMaHD.Focus();
-                    return;
-                }
-                if (dtpNgayThue.Value == dtpNgayTra.Value)
-                {
-                    MessageBox.Show("Ngày Trả không hợp lệ rồi !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dtpNgayTra.Focus();
-                    return;
-                }
-                string MaHD = txtMaHD.Text;
-                    string sql = "update HopDongTro set TenKH = '" + txtTenKH.Text.ToString() + "'," +
-                    "TienCoc ='" + int.Parse(txtTienCoc.Text) + "'," +
-                        "NgayThue = '" + dtpNgayThue.Value.ToString("yyyy-MM-dd") + "'," +
-                        " NgayTra = '" + dtpNgayTra.Value.ToString("yyyy-MM-dd") + "'" +
-                        $"where MaHopDong = '{MaHD}'";
-                    DataProvider.Instance.ExecuteNonQuery(sql);
-                    Reset_Data();
-                    dtgHopDong_load();
-                    MessageBox.Show("Đã sửa thành công");
-            }
-            catch
-            {
-                MessageBox.Show("Chưa sửa được nhé !! ");
-            }
+            btnLuu.Enabled = true;
+            txtMaHD.Enabled = true;
+            cbbMaKH.Enabled = true;
+            txtTenKH.Enabled = true;
+            cbbMaPhong.Enabled = true;
+            txtTenPhong.Enabled = true;
+            txtTienCoc.Enabled = true;
+            dtpNgayThue.Enabled = true;
+            dtpNgayTra.Enabled = true;
+            txtMaHD.Enabled = false;
+            chucnang = false;
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
+        private void Sua()
         {
             try
             {
@@ -359,12 +336,33 @@ namespace QLPT
                 DataProvider.Instance.ExecuteNonQuery(sql);
                 Reset_Data();
                 dtgHopDong_load();
-                MessageBox.Show("Đã Lưu thành công");
+                MessageBox.Show("Đã Sửa thành công");
             }
             catch
             {
-                MessageBox.Show("Chưa Lưu được nhé !! ");
+                MessageBox.Show("Chưa Sửa được nhé !! ");
             }
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (chucnang == true)
+                {
+                    Them();
+                }
+                else
+                {
+                    Sua();
+                }
+                Reset_Data() ;
+            }
+            catch 
+            {
+                MessageBox.Show("Errol roi  nhé !! ");
+            }
+
         }
 
         private void txtTienCoc_KeyPress(object sender, KeyPressEventArgs e)
