@@ -374,7 +374,6 @@
             this.phongTroControl11.Name = "phongTroControl11";
             this.phongTroControl11.Size = new System.Drawing.Size(827, 590);
             this.phongTroControl11.TabIndex = 6;
-            this.phongTroControl11.Load += new System.EventHandler(this.phongTroControl11_Load);
             // 
             // khachHangControl11
             // 

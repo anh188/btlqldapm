@@ -68,10 +68,5 @@ namespace QLPT
             SidePanel.Top = bunifuFlatButton6.Top;
             dichVuControl11.BringToFront();
         }
-
-        private void phongTroControl11_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -139,6 +139,7 @@
             this.btnLuu.TabIndex = 52;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuy
             // 
@@ -301,6 +302,7 @@
             this.cbbMaPhong.Name = "cbbMaPhong";
             this.cbbMaPhong.Size = new System.Drawing.Size(177, 28);
             this.cbbMaPhong.TabIndex = 35;
+            this.cbbMaPhong.SelectedIndexChanged += new System.EventHandler(this.cbbMaPhong_SelectedIndexChanged);
             // 
             // txtCanCuoc
             // 
@@ -374,7 +376,7 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 252);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(805, 341);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách thông tin khách hàng";
             // 
@@ -395,8 +397,8 @@
             this.dgvDanhSachKH.Name = "dgvDanhSachKH";
             this.dgvDanhSachKH.Size = new System.Drawing.Size(799, 316);
             this.dgvDanhSachKH.TabIndex = 0;
-            this.dgvDanhSachKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellClick);
-            this.dgvDanhSachKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellContentClick);
+            this.dgvDanhSachKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellClick_1);
+            this.dgvDanhSachKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKH_CellContentClick_1);
             // 
             // MaKH
             // 
@@ -462,6 +464,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "KhachHangControl1";
             this.Size = new System.Drawing.Size(805, 593);
+            this.Load += new System.EventHandler(this.KhachHangControl1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -494,13 +497,13 @@
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTenPhong;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvDanhSachKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
